@@ -1,89 +1,433 @@
-# 🤖 DevKaz Bot — Terms of Service
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-**Last Updated:** September 2026
+    <title>DevKaz Bot — Terms of Service</title>
 
-Welcome to **DevKaz Bot**, the official bot for DevKaz Community.
+    <meta
+        name="description"
+        content="DevKaz Bot Terms of Service"
+    >
 
-By using or interacting with DevKaz Bot, you agree to these Terms of Service.
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-## 1. Use of the Bot
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background:
+                radial-gradient(circle at top, #0b1d33 0%, #03070d 45%, #010204 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            line-height: 1.7;
+        }
 
-DevKaz Bot provides server-management and community features including:
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(22, 140, 255, 0.10), transparent 30%),
+                radial-gradient(circle at 80% 70%, rgba(22, 140, 255, 0.08), transparent 30%);
+            z-index: -1;
+        }
 
-* 🔐 Verification
-* 🎫 Tickets and applications
-* 📢 Major announcements
-* 🛡️ Security and honeypot protection
-* 📋 Server logging
-* 👥 Member management
-* ▶️ YouTube notifications
-* 📊 Server statistics
-* ⚙️ Bot control tools
+        header {
+            padding: 25px 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            background: rgba(3, 7, 13, 0.75);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
 
-## 2. Acceptable Use
+        .nav {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-You agree not to intentionally abuse, exploit, disrupt, or attempt to bypass the bot's systems.
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 22px;
+            font-weight: bold;
+        }
 
-You must not use the bot to:
+        .logo img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #168cff;
+            box-shadow: 0 0 18px rgba(22, 140, 255, 0.45);
+        }
 
-* Spam or flood a server
-* Harass other users
-* Attempt to bypass moderation
-* Exploit bugs or vulnerabilities
-* Access information you are not authorized to access
-* Disrupt the bot or its services
+        .back {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 18px;
+            border-radius: 10px;
+            border: 1px solid rgba(22, 140, 255, 0.35);
+            background: rgba(22, 140, 255, 0.08);
+            transition: 0.25s;
+        }
 
-## 3. Permissions
+        .back:hover {
+            background: rgba(22, 140, 255, 0.18);
+            border-color: #168cff;
+            box-shadow: 0 0 18px rgba(22, 140, 255, 0.25);
+        }
 
-Server administrators are responsible for configuring the bot's permissions correctly.
+        main {
+            max-width: 900px;
+            margin: 70px auto;
+            padding: 0 25px;
+        }
 
-DevKaz Bot only requires permissions necessary for the features enabled on a server.
+        .hero {
+            text-align: center;
+            margin-bottom: 45px;
+        }
 
-Administrators should ensure the bot has appropriate permissions and role positioning.
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 64px);
+            margin-bottom: 12px;
+            background: linear-gradient(90deg, #ffffff, #72bfff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-## 4. Moderation & Security
+        .hero p {
+            color: #9caec1;
+            font-size: 16px;
+        }
 
-DevKaz Bot may automatically perform moderation or security actions when configured to do so.
+        .card {
+            background: rgba(8, 16, 27, 0.75);
+            border: 1px solid rgba(22, 140, 255, 0.15);
+            border-radius: 18px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow:
+                0 10px 35px rgba(0, 0, 0, 0.25),
+                0 0 25px rgba(22, 140, 255, 0.04);
+            transition: 0.25s;
+        }
 
-For example, the server's honeypot system may automatically remove messages and take moderation action when triggered.
+        .card:hover {
+            border-color: rgba(22, 140, 255, 0.35);
+            transform: translateY(-2px);
+        }
 
-Server administrators are responsible for configuring these systems appropriately.
+        .card h2 {
+            color: #55adff;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
 
-## 5. Applications & Tickets
+        .card p {
+            color: #d5dde7;
+            margin-bottom: 10px;
+        }
 
-Information submitted through tickets or applications may be visible to authorized staff members who have permission to review them.
+        .card ul {
+            margin-left: 25px;
+            color: #d5dde7;
+        }
 
-Do not submit passwords, account tokens, or other sensitive information through tickets or applications.
+        .card li {
+            margin: 6px 0;
+        }
 
-## 6. Logging
+        .date {
+            color: #7f91a5;
+            font-size: 14px;
+            margin-top: 8px;
+        }
 
-Depending on the server's configuration, DevKaz Bot may record server events such as:
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            color: #66788b;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            margin-top: 60px;
+        }
 
-* Member joins and leaves
-* Message edits and deletions
-* Role changes
-* Channel changes
-* Moderation events
-* Ticket and application actions
-* Verification events
-* Security events
+        .blue {
+            color: #55adff;
+        }
 
-These logs are intended for server administration and security.
+        @media (max-width: 600px) {
+            header {
+                padding: 18px 20px;
+            }
 
-## 7. Availability
+            .logo span {
+                font-size: 18px;
+            }
 
-DevKaz Bot is provided on an **as-is** basis.
+            main {
+                margin-top: 45px;
+            }
 
-Features may occasionally become unavailable because of Discord outages, hosting problems, maintenance, bugs, or other technical issues.
+            .card {
+                padding: 22px;
+            }
 
-## 8. Changes
+            .back {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
 
-DevKaz may modify, add, or remove bot features at any time.
+<body>
 
-These Terms may also be updated when necessary.
+<header>
+    <div class="nav">
 
-## 9. Discord
+        <div class="logo">
+            <img src="profile.png" alt="DevKaz">
+            <span>DevKaz Bot</span>
+        </div>
 
-DevKaz Bot operates through Discord and is subject to applicable Discord policies.
+        <a class="back" href="index.html">
+            ← Back to Website
+        </a>
 
-Users must follow Discord's Terms of Service and Community Guidelines while using the bot
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+
+        <h1>Terms of Service</h1>
+
+        <p>
+            DevKaz Bot — Official Terms of Service
+        </p>
+
+        <div class="date">
+            Last Updated: September 2026
+        </div>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>1. Use of the Bot</h2>
+
+        <p>
+            DevKaz Bot provides Discord server-management and
+            community features for DevKaz Community and other
+            Discord servers that choose to use the bot.
+        </p>
+
+        <p>
+            Features may include verification, tickets,
+            applications, announcements, security systems,
+            logging, member systems, YouTube notifications,
+            server statistics, and bot controls.
+        </p>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>2. Acceptable Use</h2>
+
+        <p>
+            You agree not to intentionally abuse, exploit,
+            disrupt, or attempt to bypass the bot's systems.
+        </p>
+
+        <ul>
+            <li>Do not spam or intentionally overload the bot.</li>
+            <li>Do not attempt to bypass moderation systems.</li>
+            <li>Do not exploit bugs or vulnerabilities.</li>
+            <li>Do not use the bot to harass other users.</li>
+            <li>Do not attempt unauthorized access to information.</li>
+        </ul>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>3. Permissions</h2>
+
+        <p>
+            Server administrators are responsible for configuring
+            DevKaz Bot's permissions correctly.
+        </p>
+
+        <p>
+            Administrators should make sure the bot has the
+            permissions required for the features they enable.
+        </p>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>4. Security & Moderation</h2>
+
+        <p>
+            DevKaz Bot may automatically perform security or
+            moderation actions when configured to do so by a
+            server administrator.
+        </p>
+
+        <p>
+            Server administrators are responsible for configuring
+            these systems appropriately for their server.
+        </p>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>5. Tickets & Applications</h2>
+
+        <p>
+            Information submitted through tickets or applications
+            may be visible to authorized staff members who have
+            permission to review them.
+        </p>
+
+        <p>
+            Do not submit passwords, account tokens, or other
+            sensitive information through tickets or applications.
+        </p>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>6. Logging</h2>
+
+        <p>
+            Depending on the server's configuration, DevKaz Bot
+            may record server events such as:
+        </p>
+
+        <ul>
+            <li>Member joins and leaves</li>
+            <li>Message edits and deletions</li>
+            <li>Role changes</li>
+            <li>Channel changes</li>
+            <li>Moderation events</li>
+            <li>Ticket and application actions</li>
+            <li>Verification events</li>
+            <li>Security events</li>
+        </ul>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>7. Availability</h2>
+
+        <p>
+            DevKaz Bot is provided on an as-is basis.
+        </p>
+
+        <p>
+            Features may occasionally become unavailable because
+            of Discord outages, hosting problems, maintenance,
+            bugs, or other technical issues.
+        </p>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>8. Changes</h2>
+
+        <p>
+            DevKaz may modify, add, or remove bot features at
+            any time.
+        </p>
+
+        <p>
+            These Terms of Service may also be updated when
+            necessary.
+        </p>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>9. Discord</h2>
+
+        <p>
+            DevKaz Bot operates through Discord. Users must
+            follow Discord's applicable Terms of Service and
+            Community Guidelines while using the bot.
+        </p>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>10. Contact</h2>
+
+        <p>
+            For questions, bug reports, or concerns regarding
+            DevKaz Bot, please contact the <span class="blue">
+            DevKaz Community</span> staff through the official
+            Discord server.
+        </p>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>11. Agreement</h2>
+
+        <p>
+            By using DevKaz Bot, you acknowledge that you have
+            read and agree to these Terms of Service.
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>
+        © 2026 <span class="blue">DevKaz</span> —
+        DevKaz Community
+    </p>
+
+    <p>
+        Official DevKaz Bot Terms of Service
+    </p>
+</footer>
+
+</body>
+</html>
