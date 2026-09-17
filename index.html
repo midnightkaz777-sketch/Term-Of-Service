@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevKaz Bot</title>
+
+    <meta
+        name="description"
+        content="DevKaz Bot — Official Terms of Service and Privacy Policy."
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+            color: white;
+            background:
+                radial-gradient(circle at top, #0b1d33 0%, #03070d 45%, #010204 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #168cff;
+            box-shadow: 0 0 35px rgba(22, 140, 255, 0.45);
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 70px);
+            margin-bottom: 12px;
+            background: linear-gradient(90deg, #ffffff, #72bfff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: #9caec1;
+            font-size: 18px;
+            margin-bottom: 45px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            text-decoration: none;
+            color: white;
+            background: rgba(8, 16, 27, 0.8);
+            border: 1px solid rgba(22, 140, 255, 0.18);
+            border-radius: 18px;
+            padding: 35px 25px;
+            transition: 0.25s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #168cff;
+            box-shadow: 0 0 30px rgba(22, 140, 255, 0.2);
+        }
+
+        .icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            color: #55adff;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #aebdcd;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 45px;
+            color: #66788b;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <img
+        src="profile.png"
+        alt="DevKaz"
+        class="logo"
+    >
+
+    <h1>DevKaz Bot</h1>
+
+    <p class="subtitle">
+        Official DevKaz Bot information and policies
+    </p>
+
+    <div class="cards">
+
+        <a href="terms.html" class="card">
+
+            <div class="icon">📜</div>
+
+            <h2>Terms of Service</h2>
+
+            <p>
+                Read the rules and terms that apply
+                when using DevKaz Bot.
+            </p>
+
+        </a>
+
+
+        <a href="privacy.html" class="card">
+
+            <div class="icon">🔒</div>
+
+            <h2>Privacy Policy</h2>
+
+            <p>
+                Learn what information DevKaz Bot may
+                process and how it is used.
+            </p>
+
+        </a>
+
+    </div>
+
+    <footer>
+        © 2026 DevKaz Community
+    </footer>
+
+</div>
+
+</body>
+</html>
